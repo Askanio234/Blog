@@ -17,6 +17,9 @@ body {
 h3 span {
     font-size: 14px;
 }
+.comments-section {
+    margin-left: 1%;
+}
 .comment {
     padding-top: 1%;
     margin-top: 2%;
