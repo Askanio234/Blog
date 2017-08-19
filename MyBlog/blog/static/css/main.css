@@ -5,3 +5,20 @@ body {
     margin: 5% auto;
     width: 75%;
 }
+.sidebar-nav {
+    padding: 0;
+    list-style: none;
+    font-size: 2em;
+    margin: 25% auto;
+}
+.content {
+    margin: 5% auto;
+}
+h3 span {
+    font-size: 14px;
+}
+.comment {
+    padding-top: 1%;
+    margin-top: 2%;
+    border-top: 1px solid black;
+}

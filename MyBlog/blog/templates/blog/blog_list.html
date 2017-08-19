@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>All blogs:</h1>
+    {% if blog_list %}
+    <ul>
+        {% for blog in blog_list %}
+            <li>
+                <a href="{{ blog.get_absolute_url }}">{{ blog.name }}</a> ({{ blog.date }}) — {{ blog.author }}
+            </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>Sorry there are no blogs</p>
+    {% endif %}
+    
+    
+{% endblock %}
