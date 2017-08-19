@@ -23,7 +23,7 @@ class Blog(models.Model):
     date = models.DateField(default=date.today)
 
     class Meta:
-        ordering = ["-post_date"]
+        ordering = ["-date"]
 
     def get_absolute_url(self):
         return reverse('blog-detail', args=[str(self.id)])
