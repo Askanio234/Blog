@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^bloggers/$', views.AuthorListView.as_view(), name='bloggers'),
     url(r'^blogs/(?P<pk>\d+)$', views.BlogDetailView.as_view(), name='blog-detail'),
     url(r'^blogs/(?P<pk>\d+)/comment/$', views.CommentCreate.as_view(), name='comment_create'),
+    url(r'^bloggers/(?P<pk>\d+)$', views.AuthorDetailView.as_view(), name='author-detail'),
 ]

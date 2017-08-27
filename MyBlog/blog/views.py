@@ -31,6 +31,10 @@ class BlogDetailView(generic.DetailView):
     model = Blog
 
 
+class AuthorDetailView(generic.DetailView):
+    model = Author 
+
+
 class CommentCreate(LoginRequiredMixin, CreateView):
     model = Comment
     fields = ['text', ]
